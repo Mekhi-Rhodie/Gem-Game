@@ -1,6 +1,6 @@
 #container{
     display: grid;
-    gap: 20px;
+    gap: 70px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(4, minmax(auto));
 }
@@ -11,6 +11,19 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border: 3px solid black;
+    padding: 15px;
+}
+
+.strike{
+    margin-left: 60px;
+}
+
+section{
+    border: 3px solid black;
+    margin: 3px;
+    width: 60%;
+    height: 65%;
+    text-align: center;
 }
 
 #random-number{
@@ -25,8 +38,21 @@
     border: 3px solid black;
 }
 
-#points{
+#point-display{
     grid-column: 7/10;
     grid-row: 4/6;
     border: 3px solid black;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    text-align: center;
+}
+#points{
+    margin-top: 45%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#gems, #point-display{
+    margin-top: 80px;
 }
