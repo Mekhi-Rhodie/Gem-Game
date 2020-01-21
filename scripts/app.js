@@ -19,8 +19,12 @@ $(document).ready(function () {
         if(points === targetNumber){
             alert("You Won!")
         }else if(points > targetNumber){
-            alert("You Lose!!!!!")
+            console.log("You Lose!!!!!")
+            strikes--
+            points = 0
+            console.log(strikes)
         }
+
     });
 });
 
