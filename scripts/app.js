@@ -1,7 +1,7 @@
 const targetNumber = _.random(130, 250);
 let points = 0;
 let rounds = 3;
-let strikes = 3;
+let strikes = 0;
 let score = 0;
 
 $("#red-gem").attr("value", _.random(2, 5))
@@ -20,11 +20,14 @@ $(document).ready(function () {
             alert("You Won!")
         }else if(points > targetNumber){
             console.log("You Lose!!!!!")
-            strikes--
+            strikes++
             points = 0
             console.log(strikes)
         }
-
+        if(strikes === 3){
+            alert("GAME OVER!!!")
+            location.reload()
+        }
     });
 });
 
