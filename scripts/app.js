@@ -18,6 +18,7 @@ $(document).ready(function () {
         $("#points").empty().append(points += gemValue)
         if(points === targetNumber){
             alert("You Won!")
+            location.reload()
         }else if(points > targetNumber){
             console.log("You Lose!!!!!")
             strikes++
@@ -28,6 +29,7 @@ $(document).ready(function () {
             alert("GAME OVER!!!")
             location.reload()
         }
+        $("#strikes").empty().append("<h1>"+ strikes +"</h1>")
     });
 });
 
