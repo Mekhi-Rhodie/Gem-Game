@@ -7,7 +7,7 @@ let score = 0;
 $("#red-gem").attr("value", _.random(2, 5))
 $("#blue-gem").attr("value", _.random(10, 20))
 $("#green-gem").attr("value", _.random(5, 10))
-$("#yellow-gem").attr("value", 1) 
+$("#yellow-gem").attr("value", _.random(1,2)) 
 
 $("#target-number").append(targetNumber)
 
@@ -17,8 +17,8 @@ $(document).ready(function () {
         const gemValue = parseInt($(this).attr("value"))
         $("#points").empty().append(points += gemValue)
         if(points === targetNumber){
-            alert("You Won!")
-            location.reload()
+            $("#win-modal").css("display","block")
+            //location.reload()
         }else if(points > targetNumber){
             console.log("You Lose!!!!!")
             strikes++
