@@ -90,6 +90,7 @@ img {
     box-shadow: inset -3px -3px 13px black;
     border-radius: 9px;
     position: absolute;
+    margin-left: 25%;
 }
 
 .modal-content{
