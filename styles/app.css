@@ -5,6 +5,10 @@
     grid-template-rows: repeat(4, minmax(auto));
 }
 
+h1{
+    text-align: center;
+}
+
 #strikes {
     grid-column: 4/8;
     grid-row: 1/2;
@@ -32,9 +36,9 @@
 
 #target-number {
     text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    padding: 3px;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 0px;
 }
 
 img {
@@ -44,9 +48,9 @@ img {
 
 #gems {
     grid-column: 2/5;
-    grid-row: 2/4;
+    grid-row: 3/4;
     display: grid;
-    gap: 10px;
+    gap: 0px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     border-radius: 9px;
@@ -60,7 +64,7 @@ img {
 
 #point-display {
     grid-column: 7/9;
-    grid-row: 2/4;
+    grid-row: 3/4;
     width: 400px;
     height: 400px;
     border-radius: 50%;
@@ -75,7 +79,7 @@ img {
 }
 
 #gems, #point-display {
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 .modal{
