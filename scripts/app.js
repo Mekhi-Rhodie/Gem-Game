@@ -17,7 +17,8 @@ $(document).ready(function () {
         const gemValue = parseInt($(this).attr("value"))
         $("#points").empty().append(points += gemValue)
         if(points === targetNumber){
-            $("#win-modal").css("display","block")
+            $("#container").css("opacity",".30")
+            $("#win-modal").slideDown(1300).css("display","block")
             //location.reload()
         }else if(points > targetNumber){
             console.log("You Lose!!!!!")
