@@ -87,12 +87,12 @@ img {
 #win-modal{
     display: none;
     border: 2px solid black;
-    box-shadow: inset -3px -3px 13px silver;
+    box-shadow: inset -3px -3px 13px black;
     border-radius: 9px;
     position: absolute;
     margin-top: 10%;
     margin-left: 43%;
-    background-color: black;
+    background-color: silver;
 }
 
 .modal-content{
