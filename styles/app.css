@@ -1,8 +1,16 @@
+body{
+    background-color: #0F0F0F;
+}
+
 #container {
     display: grid;
     gap: 70px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(4, minmax(auto));
+    padding: 25px;
+    background-image: linear-gradient(to right, #FCFF82, #84EF6B, #E8E8E8, #99B5FF, #FF6666);
+    border-radius: 9px;
+    box-shadow: inset -1px -1px 10px black;
 }
 
 h1{
@@ -15,6 +23,7 @@ h1{
     padding: 5px;
     border-radius: 9px;
     box-shadow: inset -1px -1px 10px black;
+    background-color: #EAEAEA;
 }
 
 #win-modal > h1{
@@ -32,6 +41,7 @@ h1{
     grid-row: 2/3;
     border-radius: 9px;
     box-shadow: inset -1px -1px 10px black;
+    background-color: #EAEAEA;
 }
 
 #target-number {
@@ -55,6 +65,7 @@ img {
     grid-template-rows: repeat(2, 1fr);
     border-radius: 9px;
     box-shadow: inset -3px -3px 13px black;
+    background-color: #EAEAEA;
 }
 
 .gem {
@@ -70,6 +81,7 @@ img {
     border-radius: 50%;
     text-align: center;
     box-shadow: inset -3px -3px 13px black;
+    background-color: #EAEAEA;
 }
 
 #points {
