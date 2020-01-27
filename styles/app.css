@@ -1,18 +1,17 @@
-
 #container {
     display: grid;
-    width: 96.5%;
-    height: 30%;
+    width: 97.3%;
+    height: 100%;
     gap: 70px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(4, minmax(auto));
     padding: 25px;
-    background-image: linear-gradient(to right, #FCFF82, #84EF6B, #E8E8E8, #99B5FF, #FF6666);
+    background-image: linear-gradient(to right, #E8E8E8, #FF6666, #FCFF82, #84EF6B, #99B5FF);
     border-radius: 9px;
     box-shadow: inset -1px -1px 10px black;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
@@ -25,11 +24,11 @@ h1{
     background-color: #EAEAEA;
 }
 
-#win-modal > h1{
+#win-modal>h1 {
     color: green;
 }
 
-#lose-modal > h1 {
+#lose-modal>h1 {
     text-align: center;
     color: crimson;
     font-size: 50px;
@@ -41,6 +40,7 @@ h1{
     border-radius: 9px;
     box-shadow: inset -1px -1px 10px black;
     background-color: #EAEAEA;
+    margin-left: 30px;
 }
 
 #target-number {
@@ -93,27 +93,33 @@ img {
     margin-top: 10px;
 }
 
-.modal{
+#modal {
     display: none;
-    position: absolute;
     box-shadow: inset -3px -3px 13px black;
     border-radius: 9px;
     background-color: whitesmoke;
-    margin-top: 25%;
+    grid-column: 2/10;
+    grid-row: 1;
 }
 
-.modal-content{
+#modal-content {
     text-align: center;
     padding: 15px;
 }
 
-@media screen and (min-width: 375px){
+#reset {
+    background-color: #BF87FF;  
+    color: black;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    transition-duration: 700ms;
+    transition-property: all; 
 
-    #strikes{
-        grid-column: 1/6;
-    }
+}
 
-    #{
-
-    }
+#reset:hover {
+    color: whitesmoke;
+    background-color: #389BFF;
 }
