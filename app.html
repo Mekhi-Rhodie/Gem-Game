@@ -15,25 +15,24 @@
 </head>
 
 <body>
-    <div id="win-modal" class="modal">
-        <div class="modal-content">
-            <h1 class="modal-head">You Win!</h1>
-            <button type="reset" id="reset">Reset</button>
-        </div>
-    </div>
-    <div id="lose-modal" class="modal">
-        <div class="modal-content">
-            <h1 class="modal-head">You Lose!</h1>
-            <button type="reset" id="reset">Reset</button>
-        </div>
-    </div>
     <div id="container">
+        <div id="modal">
+            <div id="modal-content">
+                <h1 id="modal-head"></h1>
+                <button type="reset" id="reset">Reset</button>
+            </div>
+        </div>
         <div id="strikes">
             <h1>0</h1>
         </div>
         <div id="random-number">
             <div>
                 <p id="target-number"></p>
+            </div>
+        </div>
+        <div id="point-display">
+            <div>
+                <p id="points">Points</p>
             </div>
         </div>
         <div id="gems">
@@ -48,11 +47,6 @@
             </div>
             <div class="gem">
                 <img data-micron="pop" id="yellow-gem" src="images/yellow_gem.jpg" alt="Yellow Gem">
-            </div>
-        </div>
-        <div id="point-display">
-            <div>
-                <p id="points">Points</p>
             </div>
         </div>
     </div>
