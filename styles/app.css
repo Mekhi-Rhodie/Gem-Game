@@ -95,9 +95,11 @@ img {
 
 .modal{
     display: none;
+    position: absolute;
     box-shadow: inset -3px -3px 13px black;
     border-radius: 9px;
-    background-color: silver;
+    background-color: whitesmoke;
+    margin-top: 25%;
 }
 
 .modal-content{
