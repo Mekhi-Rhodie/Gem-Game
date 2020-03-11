@@ -15,4 +15,5 @@
 1. Click on a gem to add it's value to your total points
 
 ## Demo
+![Gem-Game](/images/Gem-Dream.png?raw=true "Optional Title")
 https://mekhi-rhodie.github.io/Gem-Game/
